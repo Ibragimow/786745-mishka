@@ -11,7 +11,7 @@
   <img class="page-header__logo-image" src="#" width="86" height="35" alt="Логотип проекта Мишка">
   </a>
   <nav class="main-nav">
-    <button class="main-nav__toggle toggle__open" type="button">Открыть меню</button>
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
@@ -32,69 +32,77 @@
   </header>
 
   <main class="page-main page-knitting">
-      <div class="page-main__title page__title">
+      <div class="page-main__title">
         <h1 class="page-main__header">Вязание на заказ</h1>
       </div>
-      <div class="page-knitting__description-wrapper">
+      <div class="page-knitting__wrapper page-knitting">
+            <div class="page-knitting__description-wrapper">
         <p class="page-knitting__description">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
       </div>
-      <form id="knitting__form" class="knitting__form-reserve" method="post" action="https://echo.htmlacademy.ru">
-      <div class="knitting__option option__type">
-      <h2 class="knitting__option option-header">Тип</h2>
-      <div class="type__wrapper">
-        <input type="radio" class="type__selector" name="knitting-type" value="accessory" id="accessory" checked>
+      <form id="knitting__form" class="page-knitting__form-reserve" method="post" action="https://echo.htmlacademy.ru">
+      <div class="knitting-option__wrapper knitting-option">
+      <h2 class="knitting-option__header">Тип</h2>
+      <div class="knitting-option__block type-select">
+        <input type="radio" class="type-select__selector" name="knitting-type" value="accessory" id="accessory" checked>
         <label for="accessory">Аксессуар для интерьера</label><br>
-        <input type="radio" class="type__selector" name="knitting-type" value="kids-toy" id="kids-toy">
+        <input type="radio" class="type-select__selector" name="knitting-type" value="kids-toy" id="kids-toy">
         <label for="kids-toy">Детская игрушка</label><br>
       </div>
       </div>
-      <div class="knitting__option option__color">
-        <h2 class="option-header">Цвет</h2>
-        <div class="color__wrapper">
-        <input type="checkbox" class="color__selector" name="white" id="white" checked>
+      <div class="knitting-option__wrapper knitting-option">
+        <h2 class="knitting-option__header">Цвет</h2>
+        <div class="knitting-option__block color-select">
+        <input type="checkbox" class="color-select__selector" name="white" id="white" checked>
         <label for="white">Белый</label><br>
-        <input type="checkbox" class="color__selector" name="grey" id="grey" checked>
+        <input type="checkbox" class="color-select__selector" name="grey" id="grey" checked>
         <label for="grey">Серый</label><br>
-        <input type="checkbox" class="color__selector" name="tiffany" id="tiffany">
+        <input type="checkbox" class="color-select__selector" name="tiffany" id="tiffany">
         <label for="tiffany">"Тиффани"</label><br>
-        <input type="checkbox" class="color__selector" name="black" id="black">
+        <input type="checkbox" class="color-select__selector" name="black" id="black">
         <label for="black">Черный</label><br>
-        <input type="checkbox" class="color__selector" name="pink" id="pink">
+        <input type="checkbox" class="color-select__selector" name="pink" id="pink">
         <label for="pink">Розовый</label><br>
-        <input type="checkbox" class="color__selector" name="orange" id="orange">
+        <input type="checkbox" class="color-select__selector" name="orange" id="orange">
         <label for="orange">Оранжевый</label><br>
       </div>
       </div>
-      <div class="knitting__option option__name">
-        <h2 class="option-header">ФИО</h2>
-        <div class="name__wrapper">
+      <div class="knitting-option__wrapper knitting-option">
+        <h2 class="knitting-option__header">ФИО</h2>
+        <div class="knitting-option__block name-select">
         <label for="name">Имя:</label><br>
-        <input type="text" class="name__field" name="name" required id="name" placeholder="Введите ваше имя*"><br>
+        <input type="text" class="name-select__field" name="name" required id="name" placeholder="Введите ваше имя*"><br>
         <label for="surname">Фамилия:</label><br>
-        <input type="text" class="name__field" name="surname" required id="surname" placeholder="Укажите фамилию*"><br>
+        <input type="text" class="name-select__field" name="surname" required id="surname" placeholder="Укажите фамилию*"><br>
         <label for="middle-name">Отчество:</label><br>
-        <input type="text" class="name__field" name="middle-name" id="middle-name" placeholder="Отчество, если желаете"><br>
+        <input type="text" class="name-select__field" name="middle-name" id="middle-name" placeholder="Отчество, если желаете"><br>
       </div>
       </div>
-      <div class="knitting__option option__phone">
-        <h2 class="option-header">Тел</h2>
-        <input type="text" class="name__field" name="phone" required id="phone" placeholder="+7 XXX XXX XX XX*">
+      <div class="knitting-option__wrapper knitting-option">
+        <h2 class="knitting-option__header">Тел</h2>
+        <div class="knitting-option__block phone-select">
+        <input type="text" class="phone-select__field" name="phone" required id="phone" placeholder="+7 XXX XXX XX XX*">
       </div>
-      <div class="knitting__option option__email">
-        <h2 class="option-header">E-mail</h2>
-        <input type="text" class="name__field" name="email" required id="email" placeholder="Ваш Email*">
+    </div>
+      <div class="knitting-option__wrapper knitting-option">
+        <h2 class="knitting-option__header">E-mail</h2>
+        <div class="knitting-option__block email-select">
+        <input type="text" class="email-select__field " name="email" required id="email" placeholder="Ваш Email*">
       </div>
-      <div class="knitting__option option-extra">
-        <h2 class="option-header">Доп</h2>
-        <textarea class="name__field option-extra__wants" rows="7" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+    </div>
+      <div class="knitting-option__wrapper knitting-option">
+        <h2 class="knitting-option__header">Доп</h2>
+        <div class="knitting-option__block extra-select">
+        <textarea class="extra-select__field" rows="7" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
-      <small class="knitting__option-required">
+    </div>
+        <small class="footnote__option-required footnote">
             <sup>*</sup>Поля обязательны для заполнения
       </small><br>
-      <button type="submit" class="knitting-order__button button">Отправить заказ</button>
+      <button type="submit" class="page-knitting__reserve button">Отправить заказ</button>
     </form>
+    </div>
   </main>
 
 <footer class="page-footer knitting-footer">
