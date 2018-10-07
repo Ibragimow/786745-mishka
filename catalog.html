@@ -12,7 +12,7 @@
   <img class="page-header__logo-image" src="#" width="86" height="35" alt="Логотип проекта Мишка">
   </a>
         <nav class="main-nav">
-            <button class="main-nav__toggle toggle__open" type="button">Открыть меню</button>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
@@ -36,13 +36,14 @@
         <div class="page-main__title page-title">
             <h1 class="page-main__header">Каталог товаров</h1>
         </div>
-        <div class="catalog-offers__wrapper">
+        <div class="catalog-offer__wrapper catalog-offer">
             <div class="catalog-offer__item catalog-rabbit">
                 <img class="catalog-offer__item-pic catalog-rabbit__pic" src="#" width="260" height="195" alt="Зайчик-попрыгайчик">
                 <div class="catalog-offer__characteristics">
                     <h2 class="catalog-offer__title">Зайчик-попрыгайчик</h2>
                     <p class="catalog-offer__description">Рост 30 см, вес 200 г</p>
                     <span class="catalog-offer__price">1 200 руб.</span>
+                    <button type="button" class="catalog-offer__button">Положить в корзину</button>
                 </div>
             </div>
             <div class="catalog-offer__item catalog-basket">
@@ -51,6 +52,7 @@
                     <h2 class="catalog-offer__title">Корзинка для белья</h2>
                     <p class="catalog-offer__description">Диаметр 15 см, высота 10 см</p>
                     <span class="catalog-offer__price">690 руб.</span>
+                    <button type="button" class="catalog-offer__button">Положить в корзину</button>
                 </div>
             </div>
             <div class="catalog-offer__item catalog-big-basket">
@@ -59,10 +61,11 @@
                     <h2 class="catalog-offer__title">Большая корзинка для игрушек</h2>
                     <p class="catalog-offer__description">Диаметр 30 см, высота 30 см</p>
                     <span class="catalog-offer__price">1 500 руб.</span>
+                    <button type="button" class="catalog-offer__button">Положить в корзину</button>
                 </div>
             </div>
-        </div>
-        <div class="catalog-video__wrapper video">
+
+        <div class="catalog-offer__video video">
             <div class="video__header">
                 <img class="video__header-icon" src="#" width="35" height="34" alt="Процесс производства">
                 <h2 class="video__title">Процесс производства</h2>
@@ -75,8 +78,9 @@
                     По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
                 </figcaption>
             </figure>
-            <button class="make-order__button button">Сделать заказ</button>
+            <button class="catalog-offer__order-button button">Сделать заказ</button>
         </div>
+</div>
     </main>
 
     <footer class="page-footer catalog-footer">
@@ -101,12 +105,12 @@
     <div class="choose-size__wrapper choose-size">
         <h3 class="choose-size__title">Добавить в корзину</h3>
         <p>Выберите размер:</p>
-        <div class="size-selector__wrapper">
+        <div class="size-selector__wrapper size-selector">
             <form id="size-selector__form" class="size-selector__form">
                 <input type="radio" class="size-selector__size" name="size-selector__size" checked id="s-size" value="S">
                 <input type="radio" class="size-selector__size" name="size-selector__size" id="m-size" value="M">
                 <input type="radio" class="size-selector__size" name="size-selector__size" id="l-size" value="L">
-                <button type="submit" class="add-to-cart__button button" method="post" action="https://echo.htmlacademy.ru">Добавить</button>
+                <button type="submit" class="size-selector__button button" method="post" action="https://echo.htmlacademy.ru">Добавить</button>
             </form>
         </div>
     </div>

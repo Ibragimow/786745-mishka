@@ -13,7 +13,7 @@
     <img class="page-header__logo-image" src="#" width="86" height="35" alt="Логотип проекта Мишка">
     </a>
         <nav class="main-nav">
-            <button class="main-nav__toggle toggle__open" type="button">Открыть меню</button>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
@@ -37,7 +37,7 @@
     <main class="page-main">
         <h1 class="page-main__header block-header">Милые штуки ручной работы для дома</h1>
         <h2 class="visually-hidden">Ассортимент</h2>
-        <div class="assortiment__wrapper">
+        <div class="assortiment__wrapper assortiment">
             <ul class="assortiment__lines assortiment-list">
                 <li class="assortiment-list__item assortiment-list__item--interior">
                     <a href="#">Предметы интерьера</a>
@@ -79,12 +79,12 @@
                 </tr>
             </table>
             <p class="weekly-offer item-price">Цена: 900 руб.</p>
-            <button class="weekly-offer-reserve__button button">Заказать</button>
+            <button class="weekly-offer__reserve-button button">Заказать</button>
         </div>
+<div class="about-us__wrapper about-us">
         <h2 class="about-us__header block-header">Коротко о нас:</h2>
-        <section class="about-us">
-            <div class="about-us__wrapper">
-                <ul class="about-us__list">
+        <section class="about-us__block">
+              <ul class="about-us__list">
                     <li class="about-us__item about-us__item--ecological-materials">
                         Экологически чистые материалы
                     </li>
@@ -104,10 +104,10 @@
                         Поставляется в подарочной упаковке
                     </li>
                 </ul>
-            </div>
-        </section>
-        <h2 class="feedback__header block-header">Отзывы</h2>
-        <div class="feedback">
+            </section>
+  </div>
+          <div class="feedback__wrapper feedback">
+<h2 class="feedback__header block-header">Отзывы</h2>
             <blockquote class="feedback__item">
                 <p class="feedback__moms-feedback">
                     Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии стали более стильными, а также набирают больше лайков!
@@ -119,13 +119,14 @@
             @misssssiskras
         </cite>
             </blockquote>
+        <div class="feedback-toggle">
+            <span class="feedback-toggle__left"></span>
+            <span class="feedback-toggle__right"></span>
         </div>
-        <div class="feedback__toggles">
-            <span class="feedback__toggle-left"></span>
-            <span class="feedback__toggle-right"></span>
+        <button class="feedback__write-button button">Заказать</button>
         </div>
-        <button class="feedback-write__button button">Заказать</button>
     </main>
+
 
     <div class="page-main__contacts contacts__wrapper">
         <div class="contacts__block">
