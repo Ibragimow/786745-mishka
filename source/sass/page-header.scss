@@ -1,0 +1,37 @@
+.page-header {
+  font-family: 'OpenSans', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  &__header-wrapper {
+    display: flex;
+    height: 79px;
+  }
+
+&__logo {
+      margin: auto;
+      width: 86px;
+      height: 35px;
+      background-color: white;
+      background-image: url("../img/logo-mobile.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+}
+
+  &__toggle {
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/icon-menu-open.svg");
+    list-style: none;
+    border: 0;
+    background-color: #ececec;
+    opacity: 1;
+    margin: auto;
+    flex-grow: 0;
+    position: absolute;
+    margin: 32px 31px 33px 269px;
+    cursor: pointer;
+  }
+
+}

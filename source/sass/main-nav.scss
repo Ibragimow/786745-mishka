@@ -1,0 +1,22 @@
+.main-nav {
+  height: 316px;
+
+  &__list .site-list {
+    list-style: none;
+    width: 320px;
+    padding: 0px;
+
+        &__item {
+      border: 1px solid black;
+      height: 79px;
+      color: black;
+      list-style: none;
+
+          a {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            }
+}
+}
+}
